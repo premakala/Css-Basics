@@ -1,0 +1,12 @@
+/* this is my first css block code */
+body {
+    background-color: lightblue;
+
+    background-image: url("bo.jpg");
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    background-attachment: fixed;
+}
