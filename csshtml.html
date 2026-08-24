@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html{scroll-behavior:smooth}
+
+table,td{border:2px solid black}
+tr:hover{background:yellow}
+
+.hidden{visibility:hidden}
+.inline{display:inline}
+.none{display:none}
+.block{display:block}
+.contents{display:contents}
+.item{display:list-item}
+
+.box{padding:20px;margin:30px;border:2px solid black}
+
+.bg{
+    height:200px;
+    background:url(a.jpg),url(b.jpg);
+    background-size:50% 100%;
+}
+</style>
+</head>
+
+<body id="top">
+
+<a href="#bottom">Go Bottom</a>
+
+<table>
+<tr><td>Name</td><td>Age</td></tr>
+<tr><td>Prema</td><td>22</td></tr>
+</table>
+
+<p class="hidden">Hidden</p>
+<p class="inline">Inline</p>
+<p class="none">None</p>
+<p class="block">Block</p>
+<p class="contents">Contents</p>
+<p class="item">List Item</p>
+
+<div class="box">Padding & Margin</div>
+
+<div class="bg"></div>
+
+<p style="height:500px"></p>
+
+<p id="bottom">Bottom</p>
+<a href="#top">Go Top</a>
+
+</body>
+</html>
