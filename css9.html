@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* 1. Table */
+table{border:1px solid;table-layout:fixed;width:200px}
+.none{table-layout:auto}
+
+/* 2. List */
+ul{list-style-type:square}
+
+/* 3. Grid */
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.grid div{background:lightblue;padding:20px}
+
+/* 4. Hero Image */
+.hero{background:url("hero.jpg") center/cover;height:150px}
+
+/* 5. Viewport + Media Query */
+img,video{max-width:100%}
+@media(max-width:600px){
+.grid{grid-template-columns:1fr}
+}
+</style>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+
+<body>
+
+<table>
+<tr><td>Fixed</td><td>Table</td></tr>
+</table>
+
+<table class="none">
+<tr><td>Auto</td><td>Table</td></tr>
+</table>
+
+<ul><li>HTML</li><li>CSS</li></ul>
+
+<div class="grid">
+<div>1</div><div>2</div><div>3</div><div>4</div>
+</div>
+
+<div class="hero"></div>
+
+<img src="bo.jpg"><br><br>
+<video controls width="200"><source src="announcement.ogg.mp4"></video>
+
+</body>
+</html>
