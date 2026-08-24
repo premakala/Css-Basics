@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+img{width:100px;box-shadow:5px 5px 10px gray;cursor:pointer}
+img:hover{opacity:.6}
+
+
+.box{animation:move 2s 3 1s}
+@keyframes move{from{margin-left:0}to{margin-left:100px}}
+.page a{padding:5px;margin:2px;border:1px solid}
+
+
+.static{position:static}
+.relative{position:relative;left:10px}
+.fixed{position:fixed;bottom:0}
+.absolute{position:absolute;top:50px}
+.sticky{position:sticky;top:0}
+
+
+.scroll{
+    width:150px;
+    height:50px;
+    overflow:scroll
+}
+
+
+.opacity{
+    opacity:10
+    }
+</style>
+</head>
+
+<body>
+
+<img src="image.jpg">
+
+<div class="box">Animation</div>
+
+<div class="page">
+<a href="#">1</a><a href="#">2</a><a href="#">3</a>
+</div>
+
+<p class="static">Static</p>
+<p class="relative">Relative</p>
+<p class="fixed">Fixed</p>
+<p class="absolute">Absolute</p>
+<p class="sticky">Sticky</p>
+
+<div class="scroll">This is a long content with scroll.</div>
+
+<img class="opacity" src="image.jpg">
+
+</body>
+</html>
